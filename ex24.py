@@ -38,18 +38,18 @@ ex19 の「合計」と ex23 の「件数」を **同時に** 累積するだけ
     出力: 72.4
 """
 
-total = ____                   # ヒント: 0 から始める
-count = ____                   # ヒント: 0 から始める
+total = 0                   # ヒント: 0 から始める
+count = 0                   # ヒント: 0 から始める
 while True:
     try:
-        line = ____            # ヒント: 標準入力から1行
+        line = input()            # ヒント: 標準入力から1行
     except EOFError:
         break
     number = int(line)
-    total = total + ____       # ヒント: 数値を足す
-    count = count + ____       # ヒント: 件数を1増やす
+    total = total + number       # ヒント: 数値を足す
+    count = count + 1       # ヒント: 件数を1増やす
 
 if count > 0:
-    print(total / ____)        # ヒント: 平均の計算
+    print(total / count)        # ヒント: 平均の計算
 else:
-    print("____")              # ヒント: データなしのメッセージ
+    print("データがありません")              # ヒント: データなしのメッセージ

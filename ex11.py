@@ -34,5 +34,5 @@ while True:
         line = input()
     except EOFError:
         break
-    if "____" ____ line:       # ヒント: 探したい語と、含まれているか調べる演算子
+    if "ERROR" in line:       # ヒント: 探したい語と、含まれているか調べる演算子
         print(line)

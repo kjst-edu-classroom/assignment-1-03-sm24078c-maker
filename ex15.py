@@ -27,11 +27,11 @@ ex14 と同じ「ループ外で初期化、ループ中で +1」という状態
           03: orange
 """
 
-number = ____                       # ヒント: 1から始める
+number = 1                      # ヒント: 1から始める
 while True:
     try:
-        line = ____                 # ヒント: 標準入力から1行
-    except ____:                    # ヒント: 入力終了の例外
+        line = input()                 # ヒント: 標準入力から1行
+    except EOFError:                    # ヒント: 入力終了の例外
         break
-    print(f"{number:02d}: {____}")  # ヒント: 1行の内容
-    number = number + ____          # ヒント: 1ずつ増やす
+    print(f"{number:02d}: {line}")  # ヒント: 1行の内容
+    number = number + 1          # ヒント: 1ずつ増やす

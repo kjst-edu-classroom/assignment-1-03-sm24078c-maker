@@ -33,11 +33,11 @@
           3: orange
 """
 
-number = ____                  # ヒント: 1から始める
+number = 1                  # ヒント: 1から始める
 while True:
     try:
         line = input()
     except EOFError:
         break
     print(f"{number}: {line}")
-    number = ____ + 1          # ヒント: 今の番号に1を足す
+    number = number + 1          # ヒント: 今の番号に1を足す

@@ -37,3 +37,23 @@ Python では平方根を `** 0.5` と書けます（標準ライブラリも im
 """
 
 # ここにコードを書いてください
+total = 0
+total_sq = 0
+count = 0
+while True:
+    try:
+        line = input()
+    except EOFError:
+        break
+    number = int(line)
+    total = total + number
+    total_sq = total_sq + number * number
+    count = count + 1
+
+    if count > 0:
+        mean = total / count
+        variance = total_sq / count - mean * mean
+        std_dev = variance ** 0.5
+        print(std_dev)
+    else:
+        print("データがありません")

@@ -30,9 +30,9 @@ text が空文字列でなければ text を表示してください。
 
 while True:
     try:
-        line = ____            # ヒント: 標準入力から1行
+        line = input()            # ヒント: 標準入力から1行
     except EOFError:
         break
-    text = line.____()         # ヒント: 前後の空白を除く
-    if ____ != "":             # ヒント: text が空文字列でないか
-        print(____)            # ヒント: 出力するのは text
+    text = line.strip()         # ヒント: 前後の空白を除く
+    if text:             # ヒント: text が空文字列でないか
+        print(text)            # ヒント: 出力するのは text

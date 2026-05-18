@@ -38,12 +38,12 @@
     出力: 362
 """
 
-total = ____                   # ヒント: 0 から始める
+total = 0                   # ヒント: 0 から始める
 while True:
     try:
         line = input()
     except EOFError:
         break
     number = int(line)
-    total = total + ____       # ヒント: 今読んだ数値を足す
+    total = total + number       # ヒント: 今読んだ数値を足す
 print(total)

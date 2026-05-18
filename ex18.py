@@ -38,3 +38,12 @@
 """
 
 # ここにコードを書いてください
+previous_line = None
+while True:
+    try:
+        line =input()
+    except EOFError:
+        break
+    if line != previous_line:
+        print(line)
+    previous_line = line

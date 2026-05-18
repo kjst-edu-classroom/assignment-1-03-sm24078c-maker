@@ -39,3 +39,10 @@
 """
 
 # ここにコードを書いてください
+while True:
+    try:
+        line = input()
+    except EOFError:
+        break
+    if "ERROR" in line or "INFO" in line:
+        print(line)

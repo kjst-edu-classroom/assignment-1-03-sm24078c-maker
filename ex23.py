@@ -28,11 +28,11 @@ ex19 では「合計」を累積しました。今度は「件数」を累積し
     出力: 5
 """
 
-count = ____                   # ヒント: 0 から始める
+count = 0                   # ヒント: 0 から始める
 while True:
     try:
         line = input()
     except EOFError:
         break
-    count = count + ____       # ヒント: 1 ずつ増やす
-print(____)                    # ヒント: 件数を表示
+    count = count + 1       # ヒント: 1 ずつ増やす
+print(count)                    # ヒント: 件数を表示
