@@ -35,5 +35,5 @@ while True:
         line = input()
     except EOFError:
         break
-    text = line.____("____", "____")    # ヒント: replace, 消したい文字, 置き換え後（空文字列）
+    text = line.replace(",", "")    # ヒント: replace, 消したい文字, 置き換え後（空文字列）
     print(text)

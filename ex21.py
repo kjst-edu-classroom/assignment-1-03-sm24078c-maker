@@ -24,13 +24,13 @@ ex19（合計）と ex20（カンマ削除）を組み合わせます。
     出力: 5750
 """
 
-total = ____                            # ヒント: 0 から始める
+total = 0                            # ヒント: 0 から始める
 while True:
     try:
-        line = ____                     # ヒント: 標準入力から1行
+        line = input()                     # ヒント: 標準入力から1行
     except EOFError:
         break
-    text = line.replace("____", "____") # ヒント: 「カンマを空文字列に」
-    number = int(____)                  # ヒント: 数値に変換するもとの文字列
-    total = ____ + number               # ヒント: 累積
+    text = line.replace(",", "") # ヒント: 「カンマを空文字列に」
+    number = int(text)                  # ヒント: 数値に変換するもとの文字列
+    total = total + number               # ヒント: 累積
 print(total)

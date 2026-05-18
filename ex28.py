@@ -20,3 +20,14 @@
 """
 
 # ここにコードを書いてください
+count = 0
+while True:
+    try:
+        line = input()
+    except EOFError:
+        break
+    parts = line.split()
+    status = int(parts[3])
+    if status == 404:
+        count =count + 1
+        print(count)

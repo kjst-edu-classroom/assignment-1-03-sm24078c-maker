@@ -31,9 +31,16 @@
     → samples/sample_text.txt の中身がそのまま表示される
 """
 
+import sys
+
+
+# 今のPythonが「何語」を標準としているか確認
+print(f"現在の標準エンコーディング: {sys.getdefaultencoding()}")
+
+# テキストの読み込み（encoding指定なしでも読めるはず！）
 while True:
     try:
         line = input()
-    except ____:           # ヒント: どの例外を受け取る？
-        break
-    print(____)            # ヒント: 読み込んだ1行
+    except EOFError:           # ヒント: どの例外を受け取る？
+        break            # ヒント: 読み込んだ1行
+    print(line)

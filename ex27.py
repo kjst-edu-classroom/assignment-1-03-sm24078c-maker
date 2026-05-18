@@ -37,10 +37,10 @@
 
 while True:
     try:
-        line = ____            # ヒント: 標準入力から1行
+        line = input()            # ヒント: 標準入力から1行
     except EOFError:
         break
-    parts = line.____()        # ヒント: 空白で分ける
-    status = int(parts[____])  # ヒント: ステータスコードは何番目？
-    if status >= ____:         # ヒント: 何以上か？
+    parts = line.split()        # ヒント: 空白で分ける
+    status = int(parts[3])  # ヒント: ステータスコードは何番目？
+    if status >= 400:         # ヒント: 何以上か？
         print(line)

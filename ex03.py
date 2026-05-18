@@ -20,3 +20,8 @@
 """
 
 # ここにコードを書いてください
+while True:
+    line = input()
+    if line == "end":
+        break
+    print(line)

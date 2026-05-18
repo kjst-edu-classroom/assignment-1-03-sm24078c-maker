@@ -33,11 +33,11 @@ ex11 では「`ERROR` を含む行**だけ**残す」処理でした。
         INFO 2026-05-01 09:02:00 finished
 """
 
-keyword = "____"               # ヒント: 削除したい語
+keyword = "DEBUG"               # ヒント: 削除したい語
 while True:
     try:
-        line = ____            # ヒント: 標準入力から1行
+        line = input()            # ヒント: 標準入力から1行
     except EOFError:
         break
-    if keyword ____ line:      # ヒント: 「含まれていない」を表す演算子
-        print(____)            # ヒント: 表示するのは line
+    if keyword not in line:      # ヒント: 「含まれていない」を表す演算子
+        print(line)            # ヒント: 表示するのは line

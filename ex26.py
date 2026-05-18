@@ -38,5 +38,5 @@ while True:
         line = input()
     except EOFError:
         break
-    parts = line.____()        # ヒント: 空白で分けるメソッド
-    print(parts[____])         # ヒント: 名前は何番目？（0始まり）
+    parts = line.split()        # ヒント: 空白で分けるメソッド
+    print(parts[0])         # ヒント: 名前は何番目？（0始まり）

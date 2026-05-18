@@ -57,7 +57,7 @@ ex08（空行を全部消す）と違って、こちらは「**連続する**空
           バナナ
 """
 
-previous_blank = ____          # ヒント: 最初は「直前は空行ではない」
+previous_blank = False          # ヒント: 最初は「直前は空行ではない」
 
 while True:
     try:
@@ -68,7 +68,7 @@ while True:
     if line.strip() == "":
         if previous_blank == False:
             print("")
-        previous_blank = ____  # ヒント: 今読んだ行は空行だった
+        previous_blank = True  # ヒント: 今読んだ行は空行だった
     else:
         print(line)
-        previous_blank = ____  # ヒント: 今読んだ行は空行ではなかった
+        previous_blank = False  # ヒント: 今読んだ行は空行ではなかった
